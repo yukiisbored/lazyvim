@@ -11,9 +11,33 @@ require("lazy").setup({
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import any extras modules here
-    -- { import = "lazyvim.plugins.extras.lang.typescript" },
-    -- { import = "lazyvim.plugins.extras.lang.json" },
-    -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
+
+    -- Typescript
+    { import = "lazyvim.plugins.extras.lang.typescript" },
+    { import = "lazyvim.plugins.extras.linting.eslint" },
+    { import = "lazyvim.plugins.extras.formatting.prettier" },
+    { import = "lazyvim.plugins.extras.lang.json" },
+
+    -- Python
+    { import = "lazyvim.plugins.extras.lang.python" },
+
+    -- C/C++
+    { import = "lazyvim.plugins.extras.lang.clangd" },
+
+    -- YAML
+    { import = "lazyvim.plugins.extras.lang.yaml" },
+
+    -- Coding
+    { import = "lazyvim.plugins.extras.coding.copilot" },
+    { import = "lazyvim.plugins.extras.coding.yanky" },
+
+    -- UI
+    { import = "lazyvim.plugins.extras.ui.mini-animate" },
+
+    -- Utilities
+    { import = "lazyvim.plugins.extras.util.project" },
+    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
+
     -- import/override with your plugins
     { import = "plugins" },
   },
