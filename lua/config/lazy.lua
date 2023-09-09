@@ -37,6 +37,23 @@ require("lazy").setup({
     -- Utilities
     { import = "lazyvim.plugins.extras.util.project" },
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
+    {
+      "nvim-telescope/telescope-fzf-native.nvim",
+      build = "make",
+      config = function(_, _)
+        require("telescope").setup({
+          extensions = {
+            fzf = {
+              fuzzy = true,
+              override_generic_sorter = true,
+              override_file_sorter = true,
+              case_mode = "smart_case",
+            },
+          },
+        })
+        require("telescope").load_extension("fzf")
+      end,
+    },
 
     -- import/override with your plugins
     { import = "plugins" },
