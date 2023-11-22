@@ -21,15 +21,14 @@ require("lazy").setup({
     -- Python
     { import = "lazyvim.plugins.extras.lang.python" },
 
-    -- C/C++
-    { import = "lazyvim.plugins.extras.lang.clangd" },
-
     -- YAML
     { import = "lazyvim.plugins.extras.lang.yaml" },
 
     -- Coding
     { import = "lazyvim.plugins.extras.coding.copilot" },
     { import = "lazyvim.plugins.extras.coding.yanky" },
+    { import = "lazyvim.plugins.extras.dap.core" },
+    { import = "lazyvim.plugins.extras.dap.nlua" },
 
     -- UI
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
