@@ -20,20 +20,27 @@ require("lazy").setup({
 
     -- Python
     { import = "lazyvim.plugins.extras.lang.python" },
+    { import = "lazyvim.plugins.extras.lang.python-semshi" },
+    { import = "lazyvim.plugins.extras.formatting.black" },
 
     -- YAML
     { import = "lazyvim.plugins.extras.lang.yaml" },
+
+    -- C/C++
+    { import = "lazyvim.plugins.extras.lang.clangd" },
 
     -- Coding
     { import = "lazyvim.plugins.extras.coding.copilot" },
     { import = "lazyvim.plugins.extras.coding.yanky" },
     { import = "lazyvim.plugins.extras.dap.core" },
     { import = "lazyvim.plugins.extras.dap.nlua" },
+    { import = "lazyvim.plugins.extras.editor.symbols-outline" },
 
     -- UI
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
 
     -- Utilities
+    { import = "lazyvim.plugins.extras.editor.leap" },
     { import = "lazyvim.plugins.extras.util.project" },
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
     {
