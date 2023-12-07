@@ -1,0 +1,20 @@
+return {
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = function(_, opts)
+      vim.list_extend(opts.ensure_installed, {
+        "haskell",
+      })
+    end,
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        hls = {
+          mason = false,
+        },
+      },
+    },
+  },
+}
