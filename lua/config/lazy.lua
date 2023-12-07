@@ -12,6 +12,9 @@ require("lazy").setup({
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import any extras modules here
 
+    -- VSCode
+    { import = "lazyvim.plugins.extras.vscode" },
+
     -- Typescript
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.linting.eslint" },
@@ -60,7 +63,6 @@ require("lazy").setup({
         require("telescope").load_extension("fzf")
       end,
     },
-
     -- import/override with your plugins
     { import = "plugins" },
   },
