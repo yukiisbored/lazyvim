@@ -41,6 +41,7 @@ require("lazy").setup({
 
     -- UI
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
+    { import = "lazyvim.plugins.extras.ui.edgy" },
 
     -- Utilities
     { import = "lazyvim.plugins.extras.editor.leap" },
