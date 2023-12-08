@@ -8,13 +8,21 @@ return {
     end,
   },
   {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        hls = {
-          mason = false,
-        },
-      },
+    "mrcjkb/haskell-tools.nvim",
+    ft = { "haskell", "lhaskell", "cabal", "cabalproject" },
+    keys = {
+      { "<leader>cq", vim.lsp.codelens.run, desc = "Lens Action" },
     },
+    config = function()
+      require("haskell-tools")
+
+      ---@type HTOpts
+      vim.g.haskell_tools = {
+        ---@type ToolsOpts
+        tools = {
+          hover = { enable = false },
+        },
+      }
+    end,
   },
 }
