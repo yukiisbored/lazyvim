@@ -45,6 +45,20 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.dap.nlua" },
     { import = "lazyvim.plugins.extras.editor.aerial" },
     { import = "lazyvim.plugins.extras.editor.navic" },
+    {
+      "smjonas/inc-rename.nvim",
+      config = function()
+        require("inc_rename").setup()
+      end,
+    },
+    {
+      "neovim/nvim-lspconfig",
+      opts = {
+        inlay_hints = {
+          enabled = true,
+        },
+      },
+    },
 
     -- Utilities
     { import = "lazyvim.plugins.extras.editor.leap" },
