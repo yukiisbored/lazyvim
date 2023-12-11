@@ -5,3 +5,10 @@
 local opt = vim.opt
 
 opt.pumblend = 0
+
+if vim.fn.has("win32") then
+  opt.shell = "powershell"
+  opt.shellcmdflag = "-command"
+  opt.shellquote = '\\"'
+  opt.shellxquote = ""
+end
