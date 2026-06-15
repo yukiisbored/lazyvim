@@ -18,17 +18,6 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-    {
-      "scottmckendry/cyberdream.nvim",
-      lazy = false,
-      priority = 1000,
-    },
-    {
-      "LazyVim/LazyVim",
-      opts = {
-        colorscheme = "cyberdream",
-      },
-    },
     -- import/override with your plugins
     { import = "plugins" },
   },
