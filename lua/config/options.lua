@@ -8,4 +8,4 @@ local g = vim.g
 opt.mouse = nil
 opt.colorcolumn = "80"
 
-g.lazyvim_php_lsp = "phpantom"
+g.lazyvim_php_lsp = "phpantom_lsp"
