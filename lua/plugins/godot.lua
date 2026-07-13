@@ -1,21 +1,7 @@
 return {
   {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        gdscript = {},
-        gdshader_lsp = {},
-      },
-    },
-  },
-
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        "gdscript",
-        "gdshader",
-      },
-    },
+    "Mathijs-Bakker/godotdev.nvim",
+    dependencies = { "nvim-dap", "nvim-dap-ui", "nvim-treesitter" },
+    opts = {},
   },
 }
